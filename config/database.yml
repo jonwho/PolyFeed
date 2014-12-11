@@ -23,7 +23,5 @@ test:
 
 production:
   <<: *default
-  database: d5aacpnspn4ft
-  host: ec2-54-235-193-41.compute-1.amazonaws.com
-  port: 5432
+  database: db/production
 
