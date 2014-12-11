@@ -22,5 +22,5 @@ test:
  database: db/test.db
 
 production:
-<<: *default
+  <<: *default
   database: db/production.db
