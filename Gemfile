@@ -33,6 +33,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Dashing Rails
 gem 'dashing-rails'
 
+# Maybe a missing gem for dashing
+gem 'responders'
+
 # Use puma server (for multi-threading) required for dashing rails
 gem 'puma'
 
