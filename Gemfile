@@ -34,10 +34,13 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'dashing-rails'
 
 # Maybe a missing gem for dashing
-gem 'responders'
+gem 'responders', '~> 2.0'
 
 # Use puma server (for multi-threading) required for dashing rails
 gem 'puma'
+
+# Use figaro gem to configure environment variables before app starts
+gem 'figaro'
 
 group :production do
   # for Heroku must use postgresql

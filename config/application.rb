@@ -24,6 +24,6 @@ module PolyFeed
     config.active_record.raise_in_transactional_callbacks = true
 
     # maybe this will fix Redis issue on Heroku
-    config.assets.initialize_on_precompile = false
+    # config.assets.initialize_on_precompile = false
   end
 end
