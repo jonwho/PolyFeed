@@ -39,6 +39,9 @@ gem 'puma'
 group :production do
   # for Heroku must use postgresql
   gem 'pg'
+
+  # what does this gem do?
+  gem 'rails_12factor'
 end
 
 group :development, :test do
