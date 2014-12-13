@@ -23,5 +23,4 @@ test:
 
 production:
   <<: *default
-  database: db/production
-
+  url: <% = ENV['HEROKU_POSTGRESQL_WHITE'] %>
