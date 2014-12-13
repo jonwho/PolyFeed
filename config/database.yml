@@ -23,4 +23,4 @@ test:
 
 production:
   <<: *default
-  url: <% = ENV['HEROKU_POSTGRESQL_WHITE'] %>
+  url: postgres://jyvxwjotdnkdza:pzg6gmemstacedlg7_jlbafkxl@ec2-54-243-48-204.compute-1.amazonaws.com:5432/d9mc7ef0k2j4a9
