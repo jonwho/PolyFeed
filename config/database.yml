@@ -21,7 +21,9 @@ test:
   <<: *default
   database: db/test
 
-production:
-  <<: *default
-  database: db/production
+# heroku overwrites database.yml with its own in order to connect to postgres
+# living on heroku app
+#production:
+#<<: *default
+#database: db/production
 
