@@ -5,9 +5,10 @@ Dashing.configure do |config|
 
   # Redis credentials.
   # See https://devcenter.heroku.com/articles/redistogo to configure redis for heroku.
-  config.redis_host     = URI.parse(ENV["REDISTOGO_URL"]).host 
-  config.redis_port     = URI.parse(ENV["REDISTOGO_URL"]).port
-  config.redis_password = URI.parse(ENV["REDISTOGO_URL"]).password
+  #redis://redistogo:14419eb348fc2f725019d5a1a0d9a463@dab.redistogo.com:9557/
+  config.redis_host     = 'dab.redistogo.com'
+  config.redis_port     = '9557'
+  config.redis_password = '14419eb348fc2f725019d5a1a0d9a463'
   # config.redis_timeout  = 3
 
   # Redis namespace when pushing new data.
