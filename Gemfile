@@ -42,6 +42,9 @@ gem 'puma'
 # Use figaro gem to configure environment variables before app starts
 gem 'figaro'
 
+# Let's use twitter
+gem 'twitter'
+
 group :production do
   # for Heroku must use postgresql
   gem 'pg'
