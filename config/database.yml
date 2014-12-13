@@ -23,7 +23,7 @@ test:
 
 production:
   <<: *default
-  host: ENV["PG_HOST"]
+  host: ENV["PG_HOST"].chomp('"').reverse.chomp('"').reverse
   database: ENV["PG_DATABASE"]
   username: ENV["PG_USERNAME"]
   port: 5432 #ENV["PG_PORT"]
