@@ -23,8 +23,8 @@ test:
 
 production:
   <<: *default
-  host: ENV["PG_HOST"].chomp('"').reverse.chomp('"').reverse
-  database: ENV["PG_DATABASE"]
-  username: ENV["PG_USERNAME"]
-  port: 5432 #ENV["PG_PORT"]
-  password: ENV["PG_PASSWORD"]
+  host: <%= ENV["PG_HOST"] %>
+  database: <%= ENV["PG_DATABASE"] %>
+  username: <%= ENV["PG_USERNAME"] %>
+  port: <%= ENV["PG_PORT"] %>
+  password: <%= ENV["PG_PASSWORD"] %>
