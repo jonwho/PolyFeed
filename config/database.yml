@@ -23,8 +23,8 @@ test:
 
 production:
   <<: *default
-  host: ec2-54-243-48-204.compute-1.amazonaws.com
-  database: d9mc7ef0k2j4a9
-  username: jyvxwjotdnkdza
-  port: 5432
-  password: pZg6gmeMsTACeDLG7_jlBAFKxl
+  host: ENV["PG_HOST"]
+  database: ENV["PG_DATABASE"]
+  username: ENV["PG_USERNAME"]
+  port: ENV["PG_PORT"]
+  password: ENV["PG_PASSWORD"]

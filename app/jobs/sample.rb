@@ -6,4 +6,7 @@ Dashing.scheduler.every '2s' do
 
   Dashing.send_event('valuation', { current: current_valuation, last: last_valuation })
   Dashing.send_event('synergy',   { value: rand(100) })
+
+  # Test Twitter stream
+  #Dashing.send_event('twitterfeed', { feed: $twitter_rest.update("I'm writing to twitter with the REST API")})
 end
