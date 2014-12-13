@@ -26,5 +26,5 @@ production:
   host: ENV["PG_HOST"]
   database: ENV["PG_DATABASE"]
   username: ENV["PG_USERNAME"]
-  port: ENV["PG_PORT"]
+  port: 5432 #ENV["PG_PORT"]
   password: ENV["PG_PASSWORD"]
